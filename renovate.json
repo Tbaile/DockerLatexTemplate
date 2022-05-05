@@ -1,5 +1,15 @@
 {
   "extends": [
-    "config:base"
+      "config:base"
+  ],
+  "packageRules": [
+      
+      {
+          "matchManagers": [
+              "dockerfile"
+          ],
+          "schedule": "* 0 2 * *",
+          "automerge": true
+      }
   ]
 }
